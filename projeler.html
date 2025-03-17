@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler | Kişisel Web Sitem</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background-color: white;
+            border: 1px solid var(--accent-color);
+            color: var(--dark-color);
+            padding: 8px 16px;
+            margin: 0 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .project-tag {
+            display: inline-block;
+            background-color: rgba(163, 116, 219, 0.1);
+            color: var(--primary-color);
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Projelerim</h1>
+            <p>Geliştirdiğim Projeler</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="egitim.html">Eğitim</a></li>
+                <li><a href="yetenekler.html">Yetenekler</a></li>
+                <li><a href="projeler.html">Projeler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-content">
+        <div class="container">
+            <h2>Tüm Projelerim</h2>
+            
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">Hepsi</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobil</button>
+                <button class="filter-btn" data-filter="data">Veri Bilimi</button>
+                <button class="filter-btn" data-filter="other">Diğer</button>
+            </div>
+            
+            <div class="project-container">
+                <div class="project-card" data-tags="web">
+                    <h3>[Proje Adı 1]</h3>
+                    <div>
+                        <span class="project-tag">Web</span>
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
+                    <p style="margin-top: 15px;">[Proje açıklaması... Bu proje nedir, ne yapar, hangi teknolojiyi kullanır? Projeyi geliştirirken karşılaştığınız zorluklar ve çözümler nelerdi? Ne öğrendiniz?]</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="mobile">
+                    <h3>[Proje Adı 2]</h3>
+                    <div>
+                        <span class="project-tag">Mobil</span>
+                        <span class="project-tag">Android</span>
+                        <span class="project-tag">Java</span>
+                    </div>
+                    <p style="margin-top: 15px;">[Proje açıklaması... Bu proje nedir, ne yapar, hangi teknolojiyi kullanır? Projeyi geliştirirken karşılaştığınız zorluklar ve çözümler nelerdi? Ne öğrendiniz?]</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="data">
+                    <h3>[Proje Adı 3]</h3>
+                    <div>
+                        <span class="project-tag">Veri Bilimi</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <p style="margin-top: 15px;">[Proje açıklaması... Bu proje nedir, ne yapar, hangi teknolojiyi kullanır? Projeyi geliştirirken karşılaştığınız zorluklar ve çözümler nelerdi? Ne öğrendiniz?]</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> Rapor</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="web">
+                    <h3>[Proje Adı 4]</h3>
+                    <div>
+                        <span class="project-tag">Web</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">API</span>
+                    </div>
+                    <p style="margin-top: 15px;">[Proje açıklaması... Bu proje nedir, ne yapar, hangi teknolojiyi kullanır? Projeyi geliştirirken karşılaştığınız zorluklar ve çözümler nelerdi? Ne öğrendiniz?]</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="other">
+                    <h3>[Proje Adı 5]</h3>
+                    <div>
+                        <span class="project-tag">Diğer</span>
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Algoritma</span>
+                    </div>
+                    <p style="margin-top: 15px;">[Proje açıklaması... Bu proje nedir, ne yapar, hangi teknolojiyi kullanır? Projeyi geliştirirken karşılaştığınız zorluklar ve çözümler nelerdi? Ne öğrendiniz?]</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Kişisel Web Sitem. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Proje filtreleme
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projects = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Aktif butonun stilini değiştir
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filtreleme
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projects.forEach(project => {
+                        if (filter === 'all') {
+                            project.style.display = 'block';
+                        } else {
+                            const tags = project.getAttribute('data-tags');
+                            if (tags.includes(filter)) {
+                                project.style.display = 'block';
+                            } else {
+                                project.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
