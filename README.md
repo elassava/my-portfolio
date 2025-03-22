@@ -1,14 +1,6 @@
 # Portfolio Website
 
-A cute, modern, and minimalist portfolio website designed for a 3rd-year female software engineering student.
-
-## Features
-
-- Responsive design that works on all devices
-- Smooth scrolling navigation
-- Animated sections on scroll
-- Contact form with client-side validation
-- Modern and minimalist UI with a cute color scheme
+A cute, modern, and minimalist portfolio website.
 
 ## Technologies Used
 
