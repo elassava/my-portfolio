@@ -1,57 +1,42 @@
-# Kişisel Web Sitem
+# Portfolio Website
 
-Bu repo, GitHub Pages kullanarak oluşturduğum kişisel web sitemi içerir. Yazılım mühendisliği öğrencisi olarak kendimi tanıttığım, yeteneklerimi ve projelerimi sergilediğim bir portfolyo sitesidir.
+A cute, modern, and minimalist portfolio website designed for a 3rd-year female software engineering student.
 
-## İçerik
+## Features
 
-Site aşağıdaki bölümlerden oluşmaktadır:
+- Responsive design that works on all devices
+- Smooth scrolling navigation
+- Animated sections on scroll
+- Contact form with client-side validation
+- Modern and minimalist UI with a cute color scheme
 
-- **Hakkımda**: Kendim hakkında kısa bir tanıtım
-- **Eğitim**: Eğitim geçmişim
-- **Yetenekler**: Programlama dilleri, teknolojiler ve diğer yeteneklerim
-- **Projeler**: Tamamladığım veya üzerinde çalıştığım projeler
-- **İletişim**: İletişim bilgilerim
-
-## Teknolojiler
-
-Bu web sitesinde kullanılan teknolojiler:
+## Technologies Used
 
 - HTML5
-- CSS3
-- JavaScript
-- Font Awesome (ikonlar için)
+- CSS3 (with custom properties, flexbox, grid)
+- Vanilla JavaScript (no frameworks)
+- Font Awesome icons
+- Google Fonts
 
-## Kurulum ve Çalıştırma
+## How to Use
 
-1. Bu repoyu klonlayın:
-   ```
-   git clone https://github.com/[kullanici-adi]/[repo-adi].git
-   ```
-2. İndirilen klasöre gidin:
-   ```
-   cd [repo-adi]
-   ```
-3. `index.html` dosyasını tarayıcınızda açın veya bir web sunucusu ile sunun.
+1. Clone or download this repository
+2. Open `index.html` in your browser to view the website
 
-## GitHub Pages Üzerinde Yayınlama
+## Customization
 
-1. GitHub'da yeni bir repo oluşturun: `[kullanici-adi].github.io`
-2. Bu repo içeriğini o repoya push edin:
-   ```
-   git remote set-url origin https://github.com/[kullanici-adi]/[kullanici-adi].github.io.git
-   git push -u origin main
-   ```
-3. GitHub repo ayarlarından GitHub Pages özelliğini etkinleştirin.
-4. Siteniz `https://[kullanici-adi].github.io` adresinde yayınlanacaktır.
+To personalize this portfolio:
 
-## Özelleştirme
+1. Replace the placeholder information in `index.html` with your own details
+2. Update the skills and projects sections to showcase your expertise
+3. Add your own social media links in the contact section
+4. Customize the color scheme by editing the CSS variables in the `:root` selector in `styles.css`
+5. Replace the profile placeholder with your own image by adding it to an `assets` folder and updating the HTML/CSS
 
-Site içeriğini kendinize göre özelleştirmek için:
+## License
 
-1. `index.html` dosyasında kişisel bilgilerinizi güncelleyin
-2. `css/style.css` dosyasında istediğiniz stil değişikliklerini yapın
-3. Dilerseniz resimler ekleyebilir veya arkaplan renklerini değiştirebilirsiniz
+This project is open source and available for anyone to use and modify.
 
-## Lisans
+## Preview
 
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için LICENSE dosyasını inceleyebilirsiniz. 
+Open `index.html` in a web browser to view the portfolio website. 
